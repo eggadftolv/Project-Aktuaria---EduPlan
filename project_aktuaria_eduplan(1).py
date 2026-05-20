@@ -1358,7 +1358,6 @@ elif menu == "📚 Edukasi Finansial":
 
     </div>
     """, unsafe_allow_html=True)
-    
 # =====================================================
 # TENTANG APLIKASI
 # =====================================================
@@ -1541,7 +1540,7 @@ elif menu == "ℹ Tentang Aplikasi":
     </p>
 
     </div>
-    """, unsafe_allow_html=True)
+    """, unsafe_allow_html=True)    
 
 # =====================================================
 # FOOTER
