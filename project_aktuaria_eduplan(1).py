@@ -78,7 +78,7 @@ h1, h2, h3 {
 # SIDEBAR
 # =========================================================
 
-st.sidebar.title("🎓 EduPlan+")
+st.sidebar.title("🎓FutureFund")
 
 menu = st.sidebar.radio(
     "📌 Navigation",
@@ -1187,7 +1187,7 @@ st.divider()
 st.markdown("""
 <div class="footer">
 
-EduPlan+ © 2026
+FutureFund © 2026
 
 </div>
 """, unsafe_allow_html=True)
