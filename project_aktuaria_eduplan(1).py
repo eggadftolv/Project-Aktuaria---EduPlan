@@ -1441,86 +1441,6 @@ elif menu == "ℹ Tentang Aplikasi":
     """, unsafe_allow_html=True)
 
     # =====================================================
-    # FITUR
-    # =====================================================
-
-    st.markdown("""
-    <div class="card">
-
-    <h1>🚀 Fitur Utama</h1>
-
-    <ul style='font-size:18px; line-height:2'>
-
-        <li>🎓 Simulasi Dana Pendidikan</li>
-
-        <li>📉 Analisis Risiko Inflasi</li>
-
-        <li>💰 Konsultasi Strategi Pendidikan</li>
-
-        <li>🌍 Simulasi Kuliah Luar Negeri</li>
-
-        <li>📚 Edukasi Finansial</li>
-
-    </ul>
-
-    </div>
-    """, unsafe_allow_html=True)
-
-    # =====================================================
-    # KEUNGGULAN
-    # =====================================================
-
-    st.markdown("""
-    <div class="card">
-
-    <h1>🌟 Keunggulan FutureFund</h1>
-
-    <ul style='font-size:18px; line-height:2'>
-
-        <li>✔ Mudah digunakan masyarakat umum</li>
-
-        <li>✔ Menggunakan konsep aktuaria</li>
-
-        <li>✔ Tampilan modern dan interaktif</li>
-
-        <li>✔ Simulasi realistis berbasis inflasi</li>
-
-        <li>✔ Membantu meningkatkan literasi finansial</li>
-
-    </ul>
-
-    </div>
-    """, unsafe_allow_html=True)
-
-    # =====================================================
-    # TEKNOLOGI
-    # =====================================================
-
-    st.markdown("""
-    <div class="card">
-
-    <h1>🛠 Teknologi</h1>
-
-    <p style='font-size:18px'>
-    FutureFund dikembangkan menggunakan:
-    </p>
-
-    <ul style='font-size:18px; line-height:2'>
-
-        <li>🐍 Python</li>
-
-        <li>📊 Streamlit</li>
-
-        <li>📈 Matplotlib</li>
-
-        <li>🗂 Pandas</li>
-
-    </ul>
-
-    </div>
-    """, unsafe_allow_html=True)
-
-    # =====================================================
     # FOOTER
     # =====================================================
 
@@ -1534,13 +1454,6 @@ elif menu == "ℹ Tentang Aplikasi":
     <h2>
     “Plan Education, Secure the Future”
     </h2>
-
-    <p>
-    FutureFund © 2026
-    </p>
-
-    </div>
-    """, unsafe_allow_html=True)    
 
 # =====================================================
 # FOOTER
