@@ -26,11 +26,11 @@ st.markdown("""
 section[data-testid="stSidebar"] {
     background: linear-gradient(
         180deg,
-        #0F172A 0%,
-        #1E293B 100%
+        #1E40AF 0%,
+        #2563EB 50%,
+        #1D4ED8 100%
     );
 }
-
 section[data-testid="stSidebar"] * {
     color: white;
 }
