@@ -713,6 +713,10 @@ elif menu == "💰 Konsultasi":
 
     col1, col2 = st.columns(2)
 
+    # =====================================================
+    # INPUT
+    # =====================================================
+
     with col1:
 
         target = float(st.number_input(
@@ -728,7 +732,7 @@ elif menu == "💰 Konsultasi":
     with col2:
 
         instrumen = st.selectbox(
-            "Instrumen Investasi",
+            "Instrumen Keuangan",
             [
                 "Tabungan",
                 "Deposito",
@@ -737,21 +741,45 @@ elif menu == "💰 Konsultasi":
             ]
         )
 
-        if instrumen == "Tabungan":
-            investasi = 0.03
-            risiko = "Rendah"
+    # =====================================================
+    # RETURN & RISIKO
+    # =====================================================
 
-        elif instrumen == "Deposito":
-            investasi = 0.05
-            risiko = "Rendah"
+    if instrumen == "Tabungan":
 
-        elif instrumen == "Reksa Dana":
-            investasi = 0.10
-            risiko = "Sedang"
+        investasi = 0.03
+        risiko = "Rendah"
 
-        else:
-            investasi = 0.07
-            risiko = "Rendah"
+        nama_bulanan = "Tabungan/Bulan"
+        aktivitas = "menabung"
+
+    elif instrumen == "Deposito":
+
+        investasi = 0.05
+        risiko = "Rendah"
+
+        nama_bulanan = "Deposito/Bulan"
+        aktivitas = "deposito"
+
+    elif instrumen == "Reksa Dana":
+
+        investasi = 0.10
+        risiko = "Sedang"
+
+        nama_bulanan = "Investasi Reksa Dana/Bulan"
+        aktivitas = "berinvestasi"
+
+    else:
+
+        investasi = 0.07
+        risiko = "Rendah"
+
+        nama_bulanan = "Premi Asuransi/Bulan"
+        aktivitas = "membayar premi"
+
+    # =====================================================
+    # PERHITUNGAN
+    # =====================================================
 
     i_bulanan = investasi / 12
 
@@ -767,6 +795,10 @@ elif menu == "💰 Konsultasi":
 
         PMT = target / max(n, 1)
 
+    # =====================================================
+    # DASHBOARD
+    # =====================================================
+
     st.divider()
 
     c1, c2, c3 = st.columns(3)
@@ -781,7 +813,7 @@ elif menu == "💰 Konsultasi":
     with c2:
 
         st.metric(
-            "Tabungan/Bulan",
+            nama_bulanan,
             f"Rp {float(PMT):,.0f}"
         )
 
@@ -792,55 +824,115 @@ elif menu == "💰 Konsultasi":
             risiko
         )
 
+    # =====================================================
+    # ANALISIS STRATEGI
+    # =====================================================
+
     st.divider()
 
     st.header("📊 Analisis Strategi")
 
+    # =====================================================
+    # ANALISIS RETURN
+    # =====================================================
+
     if investasi < 0.05:
 
-        st.error("""
-        Return investasi masih rendah
-        dan berpotensi kalah terhadap inflasi pendidikan.
+        st.error(f"""
+        Return dari instrumen {instrumen}
+        masih relatif rendah dan berpotensi
+        kalah terhadap inflasi pendidikan.
         """)
 
     elif investasi < 0.08:
 
-        st.warning("""
-        Investasi cukup stabil,
-        namun pertumbuhannya moderat.
+        st.warning(f"""
+        Instrumen {instrumen}
+        cukup stabil untuk perencanaan pendidikan,
+        namun pertumbuhannya masih moderat.
         """)
 
     else:
 
-        st.success("""
-        Investasi cukup baik untuk
-        perencanaan pendidikan jangka panjang.
+        st.success(f"""
+        Instrumen {instrumen}
+        cukup baik untuk perencanaan pendidikan
+        jangka panjang.
         """)
+
+    # =====================================================
+    # ANALISIS TARGET
+    # =====================================================
 
     if PMT > 5000000:
 
-        st.warning("""
+        st.warning(f"""
         Target dana tergolong besar.
 
         Disarankan:
-        - memperpanjang waktu investasi
+        - memperpanjang waktu {aktivitas}
         - meningkatkan return investasi
+        - mulai perencanaan lebih dini
         """)
 
     elif PMT > 2000000:
 
-        st.info("""
+        st.info(f"""
         Target dana masih realistis,
-        tetapi membutuhkan disiplin investasi.
+        namun membutuhkan disiplin dalam {aktivitas}.
         """)
 
     else:
 
-        st.success("""
+        st.success(f"""
         Target dana relatif realistis
-        dan lebih mudah dicapai.
+        dan lebih mudah dicapai melalui strategi {instrumen.lower()}.
         """)
 
+    # =====================================================
+    # REKOMENDASI
+    # =====================================================
+
+    st.divider()
+
+    st.header("💡 Rekomendasi FutureFund")
+
+    if instrumen == "Tabungan":
+
+        st.info("""
+        Cocok untuk:
+        - profil risiko rendah
+        - jangka pendek
+        - pengguna yang mengutamakan keamanan dana
+        """)
+
+    elif instrumen == "Deposito":
+
+        st.info("""
+        Cocok untuk:
+        - dana pendidikan menengah
+        - pengguna yang ingin return stabil
+        - risiko rendah
+        """)
+
+    elif instrumen == "Reksa Dana":
+
+        st.info("""
+        Cocok untuk:
+        - persiapan pendidikan jangka panjang
+        - mengejar inflasi pendidikan
+        - pertumbuhan dana yang lebih optimal
+        """)
+
+    else:
+
+        st.info("""
+        Cocok untuk:
+        - perlindungan pendidikan anak
+        - perencanaan pendidikan jangka panjang
+        - kombinasi proteksi dan investasi
+        """)
+        
 # =====================================================
 # EDUKASI FINANSIAL
 # =====================================================
