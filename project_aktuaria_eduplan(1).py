@@ -197,7 +197,7 @@ if menu == "🏠 Home":
 
     <hr>
 
-    <h2>🎯 EduPlan Membantu Pengguna:</h2>
+    <h2>🎯 FutureFund Membantu Pengguna:</h2>
 
     <ul style='font-size:18px; line-height:2'>
         <li>✔ Menghitung biaya pendidikan masa depan</li>
@@ -205,7 +205,6 @@ if menu == "🏠 Home":
         <li>✔ Menentukan target tabungan bulanan</li>
         <li>✔ Memilih strategi investasi pendidikan</li>
         <li>✔ Memahami risiko ekonomi dan inflasi</li>
-        <li>✔ Mempersiapkan pendidikan dengan baik dan mudah</li>
     </ul>
 
     </div>
@@ -215,7 +214,7 @@ if menu == "🏠 Home":
     # FITUR
     # =================================================
 
-    st.markdown("## 🚀 Fitur Utama EduPlan+")
+    st.markdown("## 🚀 Fitur Utama FutureFund")
 
     col1, col2 = st.columns(2)
 
@@ -227,8 +226,7 @@ if menu == "🏠 Home":
         <h2>🎓 Simulasi Dana Pendidikan</h2>
 
         <p style='font-size:18px'>
-        Menghitung estimasi biaya pendidikan masa depan
-        berdasarkan inflasi dan investasi.
+        Menghitung estimasi biaya pendidikan masa depan berdasarkan inflasi dan investasi.
         </p>
 
         </div>
@@ -240,8 +238,7 @@ if menu == "🏠 Home":
         <h2>📉 Analisis Risiko Inflasi</h2>
 
         <p style='font-size:18px'>
-        Membandingkan dampak inflasi stabil,
-        normal, dan krisis ekonomi
+        Membandingkan dampak inflasi stabil, normal, dan krisis ekonomi
         terhadap biaya pendidikan.
         </p>
 
@@ -256,8 +253,7 @@ if menu == "🏠 Home":
         <h2>💰 Konsultasi Strategi Pendidikan</h2>
 
         <p style='font-size:18px'>
-        Memberikan rekomendasi investasi,
-        estimasi tabungan,
+        Memberikan rekomendasi investasi, estimasi tabungan, 
         dan strategi pendidikan terbaik.
         </p>
 
@@ -344,7 +340,7 @@ if menu == "🏠 Home":
     </h2>
 
     <p style='font-size:18px; color:#CBD5E1'>
-    — EduPlan+
+    — FutureFund
     </p>
 
     </div>
