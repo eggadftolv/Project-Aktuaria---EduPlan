@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # =========================================================
 
 st.set_page_config(
-    page_title="EduPlan+",
+    page_title="FutureFund",
     page_icon="🎓",
     layout="wide"
 )
@@ -378,7 +378,7 @@ elif menu == "🎓 Dana Pendidikan":
         ))
 
         instrumen = st.selectbox(
-            "Instrumen Investasi",
+            "Instrumen",
             [
                 "Tabungan",
                 "Deposito",
