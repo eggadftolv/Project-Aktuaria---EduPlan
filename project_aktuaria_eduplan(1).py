@@ -345,6 +345,7 @@ if menu == "🏠 Home":
 
     </div>
     """, unsafe_allow_html=True)
+
 # =========================================================
 # DANA PENDIDIKAN
 # =========================================================
@@ -354,6 +355,10 @@ elif menu == "🎓 Dana Pendidikan":
     st.title("🎓 Simulasi Dana Pendidikan")
 
     col1, col2 = st.columns(2)
+
+    # =====================================================
+    # INPUT
+    # =====================================================
 
     with col1:
 
@@ -371,6 +376,16 @@ elif menu == "🎓 Dana Pendidikan":
             max_value=30,
             value=10
         ))
+
+        instrumen = st.selectbox(
+            "Instrumen Investasi",
+            [
+                "Tabungan",
+                "Deposito",
+                "Reksa Dana",
+                "Asuransi Pendidikan"
+            ]
+        )
 
     with col2:
 
@@ -410,7 +425,7 @@ elif menu == "🎓 Dana Pendidikan":
             )
 
             biaya_ln = float(st.number_input(
-                "Biaya Kuliah per Tahun",
+                "Biaya Pendidikan per Tahun",
                 min_value=1000,
                 value=20000,
                 step=1000
@@ -440,36 +455,27 @@ elif menu == "🎓 Dana Pendidikan":
                 step=0.5
             ))
 
-        instrumen = st.selectbox(
-            "Instrumen Investasi",
-            [
-                "Tabungan",
-                "Deposito",
-                "Reksa Dana",
-                "Asuransi Pendidikan"
-            ]
-        )
-
-        # =====================================================
-        # RETURN INVESTASI
-        # =====================================================
-
-        if instrumen == "Tabungan":
-            investasi = 0.03
-
-        elif instrumen == "Deposito":
-            investasi = 0.05
-
-        elif instrumen == "Reksa Dana":
-            investasi = 0.10
-
-        else:
-            investasi = 0.07
-
     # =====================================================
-    # PERHITUNGAN
+    # RETURN INVESTASI
     # =====================================================
 
+    if instrumen == "Tabungan":
+
+        investasi = 0.03
+
+    elif instrumen == "Deposito":
+
+        investasi = 0.05
+
+    elif instrumen == "Reksa Dana":
+
+        investasi = 0.10
+
+    else:
+
+        investasi = 0.07
+
+    nama_instrumen = instrumen
     inflasi_decimal = inflasi / 100
 
     FV = biaya * (1 + inflasi_decimal) ** tahun
@@ -506,14 +512,14 @@ elif menu == "🎓 Dana Pendidikan":
     with c2:
 
         st.metric(
-            "Tabungan/Bulan",
+            f"{nama_instrumen}/Bulan",
             f"Rp {float(PMT):,.0f}"
         )
 
     with c3:
 
         st.metric(
-            "Return Investasi",
+            f"Return {nama_instrumen}",
             f"{investasi*100:.1f}%"
         )
 
@@ -527,7 +533,7 @@ elif menu == "🎓 Dana Pendidikan":
     Inflasi pendidikan diperkirakan sebesar
     {inflasi:.1f}% per tahun.
 
-    Return investasi dari instrumen {instrumen}
+    Return dari instrumen {nama_instrumen}
     diperkirakan sebesar {investasi*100:.1f}% per tahun.
 
     Semakin tinggi inflasi pendidikan,
@@ -560,13 +566,19 @@ elif menu == "🎓 Dana Pendidikan":
         )
 
         tahun_list.append(t)
+
         biaya_list.append(round(nilai_biaya))
+
         investasi_list.append(round(saldo))
 
     df = pd.DataFrame({
+
         "Tahun": tahun_list,
+
         "Biaya Pendidikan": biaya_list,
-        "Nilai Investasi": investasi_list
+
+        f"Nilai {nama_instrumen}": investasi_list
+
     })
 
     st.dataframe(df, use_container_width=True)
@@ -594,19 +606,14 @@ elif menu == "🎓 Dana Pendidikan":
         investasi_list,
         marker='s',
         linewidth=3,
-        label='Nilai Investasi'
+        label=f'Nilai {nama_instrumen}'
     )
 
     ax.set_title("Simulasi Dana Pendidikan")
-
     ax.set_xlabel("Tahun")
-
     ax.set_ylabel("Nilai (Rp)")
-
     ax.grid(True)
-
     ax.legend()
-
     st.pyplot(fig)
 
 # =========================================================
