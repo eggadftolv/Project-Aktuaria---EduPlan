@@ -690,15 +690,10 @@ elif menu == "📉 Analisis Risiko Inflasi":
     )
 
     ax.set_title("Perbandingan Risiko Inflasi")
-
     ax.set_xlabel("Tahun")
-
     ax.set_ylabel("Biaya Pendidikan")
-
     ax.grid(True)
-
     ax.legend()
-
     st.pyplot(fig)
 
 # =========================================================
