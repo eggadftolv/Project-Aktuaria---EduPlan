@@ -936,142 +936,429 @@ elif menu == "📚 Edukasi Finansial":
 
     st.title("📚 Edukasi Finansial")
 
+    # =====================================================
+    # INFLASI PENDIDIKAN
+    # =====================================================
+
     st.markdown("""
     <div class="card">
 
-    <h2>📌 Apa itu inflasi pendidikan?</h2>
+    <h1>📌 Apa itu Inflasi Pendidikan?</h1>
 
     <p style='font-size:18px'>
     Inflasi pendidikan adalah kenaikan biaya pendidikan
     dari tahun ke tahun akibat peningkatan biaya operasional,
-    fasilitas sekolah, teknologi pendidikan, serta kondisi ekonomi global.
+    fasilitas sekolah, teknologi pendidikan,
+    biaya tenaga pengajar,
+    serta kondisi ekonomi global.
     </p>
 
     <p style='font-size:18px'>
-    Biaya pendidikan umumnya meningkat lebih cepat dibandingkan
-    inflasi biasa. Oleh karena itu, orang tua perlu
-    mempersiapkan dana pendidikan sejak dini.
+    Inflasi pendidikan umumnya lebih tinggi dibandingkan
+    inflasi biasa karena sektor pendidikan terus berkembang
+    dan membutuhkan fasilitas yang semakin modern.
+    </p>
+
+    <p style='font-size:18px'>
+    Sebagai contoh,
+    biaya kuliah Rp20 juta saat ini
+    dapat meningkat menjadi lebih dari Rp50 juta
+    dalam 10 tahun apabila inflasi pendidikan mencapai 10% per tahun.
     </p>
 
     <p style='font-size:16px; color:gray'>
     Sumber:
-    Badan Pusat Statistik (BPS),
-    Otoritas Jasa Keuangan (OJK),
-    dan Bank Indonesia.
+    BPS, OJK, Bank Indonesia, CNBC Indonesia
     </p>
 
-    <hr>
+    </div>
+    """, unsafe_allow_html=True)
 
-    <h2>💰 Mengapa investasi penting?</h2>
+    # =====================================================
+    # PENTINGNYA PERENCANAAN
+    # =====================================================
 
-    <p style='font-size:18px'>
-    Nilai uang dapat menurun akibat inflasi.
-    Jika uang hanya disimpan tanpa investasi,
-    maka daya beli uang akan semakin berkurang di masa depan.
-    </p>
+    st.markdown("""
+    <div class="card">
 
-    <p style='font-size:18px'>
-    Investasi membantu pertumbuhan dana agar
-    dapat mengejar kenaikan biaya pendidikan.
-    </p>
-
-    <p style='font-size:18px'>
-    Contohnya:
-    jika inflasi pendidikan mencapai 10% per tahun,
-    maka biaya kuliah Rp20 juta saat ini
-    dapat menjadi lebih dari Rp50 juta dalam 10 tahun.
-    </p>
-
-    <p style='font-size:16px; color:gray'>
-    Sumber:
-    Otoritas Jasa Keuangan (OJK),
-    Bank Indonesia,
-    dan CNBC Indonesia.
-    </p>
-
-    <hr>
-
-    <h2>🎓 Mengapa dana pendidikan harus dipersiapkan?</h2>
+    <h1>🎓 Mengapa Dana Pendidikan Harus Dipersiapkan?</h1>
 
     <p style='font-size:18px'>
     Pendidikan merupakan kebutuhan jangka panjang
     yang membutuhkan biaya besar.
     Tanpa perencanaan yang baik,
     keluarga dapat mengalami kesulitan finansial
-    ketika biaya pendidikan meningkat drastis.
+    akibat kenaikan biaya pendidikan di masa depan.
     </p>
 
-    <p style='font-size:18px'>
-    Perencanaan dana pendidikan membantu:
-    </p>
+    <h2>📌 Manfaat Perencanaan Dana Pendidikan:</h2>
 
-    <ul style='font-size:18px'>
-        <li>Mengurangi risiko kekurangan dana pendidikan</li>
-        <li>Menghindari utang pendidikan</li>
-        <li>Meningkatkan kesiapan finansial keluarga</li>
-        <li>Memberikan rasa aman terhadap masa depan anak</li>
+    <ul style='font-size:18px; line-height:2'>
+        <li>✔ Mengurangi risiko kekurangan dana pendidikan</li>
+        <li>✔ Menghindari utang pendidikan</li>
+        <li>✔ Membantu mencapai pendidikan berkualitas</li>
+        <li>✔ Memberikan rasa aman finansial keluarga</li>
+        <li>✔ Membantu menghadapi inflasi pendidikan</li>
     </ul>
 
-    <p style='font-size:16px; color:gray'>
-    Sumber:
-    OJK, Bank Indonesia, dan Kementerian Pendidikan Indonesia.
-    </p>
+    </div>
+    """, unsafe_allow_html=True)
 
-    <hr>
+    # =====================================================
+    # TABUNGAN
+    # =====================================================
 
-    <h2>📈 Apa itu nilai waktu uang (Time Value of Money)?</h2>
+    st.markdown("""
+    <div class="card">
 
-    <p style='font-size:18px'>
-    Konsep nilai waktu uang menjelaskan bahwa
-    uang saat ini lebih berharga dibandingkan
-    uang di masa depan karena uang dapat diinvestasikan
-    dan menghasilkan keuntungan.
-    </p>
+    <h1>🏦 Tabungan</h1>
 
     <p style='font-size:18px'>
-    Dalam matematika aktuaria,
-    konsep ini digunakan untuk menghitung:
+    Tabungan merupakan produk perbankan
+    untuk menyimpan uang dengan tingkat risiko sangat rendah.
     </p>
 
-    <ul style='font-size:18px'>
-        <li>Future Value (Nilai Masa Depan)</li>
-        <li>Present Value (Nilai Sekarang)</li>
-        <li>Anuitas</li>
-        <li>Perencanaan investasi pendidikan</li>
+    <h2>✅ Kelebihan Tabungan</h2>
+
+    <ul style='font-size:18px; line-height:2'>
+        <li>✔ Risiko sangat rendah</li>
+        <li>✔ Dana mudah dicairkan</li>
+        <li>✔ Cocok untuk dana darurat</li>
+        <li>✔ Aman dan mudah dipahami masyarakat umum</li>
     </ul>
 
-    <p style='font-size:16px; color:gray'>
-    Sumber:
-    Ross, Westerfield & Jordan (Fundamentals of Corporate Finance),
-    serta literatur Matematika Keuangan dan Aktuaria.
-    </p>
+    <h2>❌ Kekurangan Tabungan</h2>
 
-    <hr>
+    <ul style='font-size:18px; line-height:2'>
+        <li>✖ Return relatif kecil</li>
+        <li>✖ Sering kalah terhadap inflasi pendidikan</li>
+        <li>✖ Pertumbuhan dana lambat</li>
+    </ul>
 
-    <h2>🌍 Mengapa kurs dollar dan euro penting untuk kuliah luar negeri?</h2>
-
-    <p style='font-size:18px'>
-    Biaya pendidikan luar negeri dipengaruhi
-    oleh nilai tukar mata uang asing seperti
-    Dollar Amerika (USD) dan Euro (EUR).
-    </p>
+    <h2>🎯 Cocok Untuk</h2>
 
     <p style='font-size:18px'>
-    Ketika nilai rupiah melemah,
-    maka biaya kuliah luar negeri menjadi lebih mahal.
-    Oleh karena itu,
-    perencanaan dana pendidikan luar negeri
-    harus mempertimbangkan risiko perubahan kurs.
+    Jangka pendek dan pengguna dengan profil risiko rendah.
     </p>
 
     <p style='font-size:16px; color:gray'>
-    Sumber:
-    Bank Indonesia dan data kurs internasional.
+    Return rata-rata: 2% - 3% per tahun
     </p>
 
     </div>
     """, unsafe_allow_html=True)
 
+    # =====================================================
+    # DEPOSITO
+    # =====================================================
+
+    st.markdown("""
+    <div class="card">
+
+    <h1>🏛 Deposito</h1>
+
+    <p style='font-size:18px'>
+    Deposito adalah simpanan berjangka
+    dengan bunga lebih tinggi dibandingkan tabungan.
+    Dana disimpan dalam periode tertentu
+    sesuai kesepakatan dengan bank.
+    </p>
+
+    <h2>✅ Kelebihan Deposito</h2>
+
+    <ul style='font-size:18px; line-height:2'>
+        <li>✔ Return lebih tinggi dari tabungan</li>
+        <li>✔ Risiko rendah</li>
+        <li>✔ Cocok untuk dana pendidikan menengah</li>
+        <li>✔ Stabil dan aman</li>
+    </ul>
+
+    <h2>❌ Kekurangan Deposito</h2>
+
+    <ul style='font-size:18px; line-height:2'>
+        <li>✖ Dana tidak fleksibel</li>
+        <li>✖ Ada penalti jika dicairkan lebih awal</li>
+        <li>✖ Return masih dapat kalah terhadap inflasi tinggi</li>
+    </ul>
+
+    <h2>🎯 Cocok Untuk</h2>
+
+    <p style='font-size:18px'>
+    Pengguna dengan profil risiko rendah
+    dan target pendidikan jangka menengah.
+    </p>
+
+    <p style='font-size:16px; color:gray'>
+    Return rata-rata: 4% - 6% per tahun
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =====================================================
+    # REKSA DANA
+    # =====================================================
+
+    st.markdown("""
+    <div class="card">
+
+    <h1>📈 Reksa Dana</h1>
+
+    <p style='font-size:18px'>
+    Reksa dana adalah instrumen investasi
+    yang dikelola oleh manajer investasi
+    untuk mengembangkan dana investor.
+    </p>
+
+    <h2>✅ Kelebihan Reksa Dana</h2>
+
+    <ul style='font-size:18px; line-height:2'>
+        <li>✔ Potensi return lebih tinggi</li>
+        <li>✔ Cocok untuk melawan inflasi pendidikan</li>
+        <li>✔ Dikelola profesional</li>
+        <li>✔ Cocok untuk jangka panjang</li>
+    </ul>
+
+    <h2>❌ Kekurangan Reksa Dana</h2>
+
+    <ul style='font-size:18px; line-height:2'>
+        <li>✖ Nilai investasi dapat naik turun</li>
+        <li>✖ Memiliki risiko pasar</li>
+        <li>✖ Membutuhkan pemahaman investasi</li>
+    </ul>
+
+    <h2>🎯 Cocok Untuk</h2>
+
+    <p style='font-size:18px'>
+    Perencanaan pendidikan jangka panjang
+    dan pengguna dengan profil risiko menengah.
+    </p>
+
+    <p style='font-size:16px; color:gray'>
+    Return rata-rata: 8% - 12% per tahun
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =====================================================
+    # ASURANSI PENDIDIKAN
+    # =====================================================
+
+    st.markdown("""
+    <div class="card">
+
+    <h1>🛡 Asuransi Pendidikan</h1>
+
+    <p style='font-size:18px'>
+    Asuransi pendidikan merupakan produk keuangan
+    yang menggabungkan perlindungan jiwa
+    dan dana pendidikan anak di masa depan.
+    </p>
+
+    <h2>✅ Kelebihan Asuransi Pendidikan</h2>
+
+    <ul style='font-size:18px; line-height:2'>
+        <li>✔ Memberikan perlindungan finansial</li>
+        <li>✔ Dana pendidikan lebih terencana</li>
+        <li>✔ Cocok untuk jangka panjang</li>
+        <li>✔ Memberikan manfaat proteksi keluarga</li>
+    </ul>
+
+    <h2>❌ Kekurangan Asuransi Pendidikan</h2>
+
+    <ul style='font-size:18px; line-height:2'>
+        <li>✖ Premi relatif lebih besar</li>
+        <li>✖ Return tidak setinggi reksa dana</li>
+        <li>✖ Kurang fleksibel dibanding investasi biasa</li>
+    </ul>
+
+    <h2>🎯 Cocok Untuk</h2>
+
+    <p style='font-size:18px'>
+    Orang tua yang menginginkan
+    perlindungan sekaligus dana pendidikan.
+    </p>
+
+    <p style='font-size:16px; color:gray'>
+    Return rata-rata: 5% - 8% per tahun
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =====================================================
+    # PERBANDINGAN
+    # =====================================================
+
+    st.markdown("""
+    <div class="card">
+
+    <h1>⚖ Perbandingan Instrumen Keuangan</h1>
+
+    <table style='width:100%; font-size:18px'>
+
+    <tr>
+        <th>Instrumen</th>
+        <th>Risiko</th>
+        <th>Return</th>
+        <th>Likuiditas</th>
+        <th>Cocok Untuk</th>
+    </tr>
+
+    <tr>
+        <td>Tabungan</td>
+        <td>Rendah</td>
+        <td>2%-3%</td>
+        <td>Tinggi</td>
+        <td>Jangka Pendek</td>
+    </tr>
+
+    <tr>
+        <td>Deposito</td>
+        <td>Rendah</td>
+        <td>4%-6%</td>
+        <td>Sedang</td>
+        <td>Jangka Menengah</td>
+    </tr>
+
+    <tr>
+        <td>Reksa Dana</td>
+        <td>Sedang</td>
+        <td>8%-12%</td>
+        <td>Tinggi</td>
+        <td>Jangka Panjang</td>
+    </tr>
+
+    <tr>
+        <td>Asuransi Pendidikan</td>
+        <td>Rendah-Sedang</td>
+        <td>5%-8%</td>
+        <td>Rendah</td>
+        <td>Proteksi + Pendidikan</td>
+    </tr>
+
+    </table>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =====================================================
+    # TIME VALUE OF MONEY
+    # =====================================================
+
+    st.markdown("""
+    <div class="card">
+
+    <h1>📈 Apa itu Time Value of Money?</h1>
+
+    <p style='font-size:18px'>
+    Time Value of Money (TVM)
+    adalah konsep bahwa uang saat ini
+    lebih berharga dibandingkan uang di masa depan
+    karena uang dapat diinvestasikan
+    dan menghasilkan keuntungan.
+    </p>
+
+    <p style='font-size:18px'>
+    Konsep ini digunakan dalam:
+    </p>
+
+    <ul style='font-size:18px; line-height:2'>
+        <li>✔ Perencanaan dana pendidikan</li>
+        <li>✔ Future Value</li>
+        <li>✔ Present Value</li>
+        <li>✔ Anuitas</li>
+        <li>✔ Investasi jangka panjang</li>
+    </ul>
+
+    <p style='font-size:16px; color:gray'>
+    Sumber:
+    Ross, Westerfield & Jordan
+    (Fundamentals of Corporate Finance)
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =====================================================
+    # KULIAH LUAR NEGERI
+    # =====================================================
+
+    st.markdown("""
+    <div class="card">
+
+    <h1>🌍 Dana Pendidikan Luar Negeri</h1>
+
+    <p style='font-size:18px'>
+    Kuliah luar negeri membutuhkan perencanaan finansial
+    yang lebih kompleks karena dipengaruhi:
+    </p>
+
+    <ul style='font-size:18px; line-height:2'>
+        <li>✔ Kurs dollar dan euro</li>
+        <li>✔ Inflasi global</li>
+        <li>✔ Biaya hidup internasional</li>
+        <li>✔ Kenaikan tuition fee universitas</li>
+    </ul>
+
+    <p style='font-size:18px'>
+    Ketika nilai rupiah melemah,
+    maka biaya pendidikan luar negeri
+    akan menjadi lebih mahal.
+    </p>
+
+    <p style='font-size:18px'>
+    Oleh karena itu,
+    perencanaan dana pendidikan luar negeri
+    perlu dilakukan lebih awal.
+    </p>
+
+    <p style='font-size:16px; color:gray'>
+    Sumber:
+    Bank Indonesia,
+    QS World University Rankings,
+    dan data kurs internasional.
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =====================================================
+    # PENUTUP
+    # =====================================================
+
+    st.markdown("""
+    <div style="
+        background: linear-gradient(
+            135deg,
+            #1E3A8A 0%,
+            #2563EB 100%
+        );
+        padding:40px;
+        border-radius:20px;
+        color:white;
+        text-align:center;
+        margin-top:20px;
+    ">
+
+    <h1>💡 FutureFund</h1>
+
+    <p style='font-size:22px'>
+    “Plan Education, Secure the Future”
+    </p>
+
+    <p style='font-size:18px'>
+    FutureFund hadir untuk membantu masyarakat
+    memahami pentingnya perencanaan dana pendidikan
+    sejak dini melalui edukasi finansial,
+    simulasi aktuaria,
+    dan strategi investasi pendidikan.
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+    
 # =====================================================
 # TENTANG APLIKASI
 # =====================================================
