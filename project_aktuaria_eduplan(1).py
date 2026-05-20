@@ -1,9 +1,3 @@
-# =========================================================
-# EDUPLAN+
-# FINAL FIXED VERSION
-# STABLE FOR STREAMLIT CLOUD
-# =========================================================
-
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -218,14 +212,14 @@ elif menu == "🎓 Dana Pendidikan":
 
                 kurs = float(st.number_input(
                     "Kurs Dollar (Rp)",
-                    value=17000
+                    value=17695
                 ))
 
             else:
 
                 kurs = float(st.number_input(
                     "Kurs Euro (Rp)",
-                    value=19000
+                    value=20535
                 ))
 
             biaya = biaya_ln * kurs
@@ -275,10 +269,6 @@ elif menu == "🎓 Dana Pendidikan":
     i_bulanan = investasi / 12
 
     n = tahun * 12
-
-    # =====================================================
-    # ANTI DIVISION ERROR
-    # =====================================================
 
     if i_bulanan > 0 and n > 0:
 
@@ -647,25 +637,141 @@ elif menu == "📚 Edukasi Finansial":
     st.markdown("""
     <div class="card">
 
-    ## Apa itu inflasi pendidikan?
+    <h2>📌 Apa itu inflasi pendidikan?</h2>
 
+    <p style='font-size:18px'>
     Inflasi pendidikan adalah kenaikan biaya pendidikan
-    setiap tahun akibat faktor ekonomi.
+    dari tahun ke tahun akibat peningkatan biaya operasional,
+    fasilitas sekolah, teknologi pendidikan, serta kondisi ekonomi global.
+    </p>
 
-    ## Mengapa investasi penting?
+    <p style='font-size:18px'>
+    Biaya pendidikan umumnya meningkat lebih cepat dibandingkan
+    inflasi biasa. Oleh karena itu, orang tua perlu
+    mempersiapkan dana pendidikan sejak dini.
+    </p>
 
-    Karena nilai uang dapat menurun akibat inflasi.
+    <p style='font-size:16px; color:gray'>
+    Sumber:
+    Badan Pusat Statistik (BPS),
+    Otoritas Jasa Keuangan (OJK),
+    dan Bank Indonesia.
+    </p>
 
-    ## Mengapa dana pendidikan harus dipersiapkan?
+    <hr>
 
-    Agar keluarga tidak terbebani biaya pendidikan
-    di masa depan.
+    <h2>💰 Mengapa investasi penting?</h2>
+
+    <p style='font-size:18px'>
+    Nilai uang dapat menurun akibat inflasi.
+    Jika uang hanya disimpan tanpa investasi,
+    maka daya beli uang akan semakin berkurang di masa depan.
+    </p>
+
+    <p style='font-size:18px'>
+    Investasi membantu pertumbuhan dana agar
+    dapat mengejar kenaikan biaya pendidikan.
+    </p>
+
+    <p style='font-size:18px'>
+    Contohnya:
+    jika inflasi pendidikan mencapai 10% per tahun,
+    maka biaya kuliah Rp20 juta saat ini
+    dapat menjadi lebih dari Rp50 juta dalam 10 tahun.
+    </p>
+
+    <p style='font-size:16px; color:gray'>
+    Sumber:
+    Otoritas Jasa Keuangan (OJK),
+    Bank Indonesia,
+    dan CNBC Indonesia.
+    </p>
+
+    <hr>
+
+    <h2>🎓 Mengapa dana pendidikan harus dipersiapkan?</h2>
+
+    <p style='font-size:18px'>
+    Pendidikan merupakan kebutuhan jangka panjang
+    yang membutuhkan biaya besar.
+    Tanpa perencanaan yang baik,
+    keluarga dapat mengalami kesulitan finansial
+    ketika biaya pendidikan meningkat drastis.
+    </p>
+
+    <p style='font-size:18px'>
+    Perencanaan dana pendidikan membantu:
+    </p>
+
+    <ul style='font-size:18px'>
+        <li>Mengurangi risiko kekurangan dana pendidikan</li>
+        <li>Menghindari utang pendidikan</li>
+        <li>Meningkatkan kesiapan finansial keluarga</li>
+        <li>Memberikan rasa aman terhadap masa depan anak</li>
+    </ul>
+
+    <p style='font-size:16px; color:gray'>
+    Sumber:
+    OJK, Bank Indonesia, dan Kementerian Pendidikan Indonesia.
+    </p>
+
+    <hr>
+
+    <h2>📈 Apa itu nilai waktu uang (Time Value of Money)?</h2>
+
+    <p style='font-size:18px'>
+    Konsep nilai waktu uang menjelaskan bahwa
+    uang saat ini lebih berharga dibandingkan
+    uang di masa depan karena uang dapat diinvestasikan
+    dan menghasilkan keuntungan.
+    </p>
+
+    <p style='font-size:18px'>
+    Dalam matematika aktuaria,
+    konsep ini digunakan untuk menghitung:
+    </p>
+
+    <ul style='font-size:18px'>
+        <li>Future Value (Nilai Masa Depan)</li>
+        <li>Present Value (Nilai Sekarang)</li>
+        <li>Anuitas</li>
+        <li>Perencanaan investasi pendidikan</li>
+    </ul>
+
+    <p style='font-size:16px; color:gray'>
+    Sumber:
+    Ross, Westerfield & Jordan (Fundamentals of Corporate Finance),
+    serta literatur Matematika Keuangan dan Aktuaria.
+    </p>
+
+    <hr>
+
+    <h2>🌍 Mengapa kurs dollar dan euro penting untuk kuliah luar negeri?</h2>
+
+    <p style='font-size:18px'>
+    Biaya pendidikan luar negeri dipengaruhi
+    oleh nilai tukar mata uang asing seperti
+    Dollar Amerika (USD) dan Euro (EUR).
+    </p>
+
+    <p style='font-size:18px'>
+    Ketika nilai rupiah melemah,
+    maka biaya kuliah luar negeri menjadi lebih mahal.
+    Oleh karena itu,
+    perencanaan dana pendidikan luar negeri
+    harus mempertimbangkan risiko perubahan kurs.
+    </p>
+
+    <p style='font-size:16px; color:gray'>
+    Sumber:
+    Bank Indonesia dan data kurs internasional.
+    </p>
 
     </div>
     """, unsafe_allow_html=True)
 
 # =====================================================
-# TENTANG
+# TENTANG APLIKASI
 # =====================================================
 
 elif menu == "ℹ Tentang Aplikasi":
@@ -675,18 +781,191 @@ elif menu == "ℹ Tentang Aplikasi":
     st.markdown("""
     <div class="card">
 
-    EduPlan+ merupakan aplikasi simulasi dana pendidikan
-    berbasis matematika aktuaria dan nilai waktu uang.
+    <h2>🎓 Apa itu EduPlan+?</h2>
 
-    ### Teknologi:
-    - Python
-    - Streamlit
-    - Pandas
-    - Matplotlib
+    <p style='font-size:18px'>
+    EduPlan+ adalah aplikasi simulasi dan perencanaan
+    dana pendidikan berbasis matematika aktuaria,
+    inflasi pendidikan, dan konsep nilai waktu uang
+    (Time Value of Money).
+    </p>
 
-    ### Tujuan:
-    Membantu masyarakat memahami pentingnya
-    perencanaan dana pendidikan sejak dini.
+    <p style='font-size:18px'>
+    Aplikasi ini dirancang untuk membantu masyarakat,
+    khususnya orang tua dan mahasiswa,
+    dalam memahami pentingnya persiapan dana pendidikan
+    sejak dini.
+    </p>
+
+    <p style='font-size:18px'>
+    Di tengah kondisi ekonomi yang tidak stabil,
+    kenaikan inflasi pendidikan,
+    serta melemahnya nilai rupiah terhadap dollar dan euro,
+    perencanaan dana pendidikan menjadi semakin penting.
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =====================================================
+    # VISI MISI
+    # =====================================================
+
+    st.markdown("""
+    <div class="card">
+
+    <h2>🚀 Visi EduPlan+</h2>
+
+    <p style='font-size:18px'>
+    Menjadi aplikasi edukasi dan simulasi keuangan pendidikan
+    yang membantu masyarakat memahami pentingnya
+    perencanaan dana pendidikan secara mudah,
+    modern, dan berbasis ilmu aktuaria.
+    </p>
+
+    <hr>
+
+    <h2>🎯 Misi EduPlan+</h2>
+
+    <ul style='font-size:18px'>
+        <li>Meningkatkan literasi finansial masyarakat</li>
+        <li>Membantu keluarga merencanakan dana pendidikan</li>
+        <li>Memberikan simulasi inflasi pendidikan secara realistis</li>
+        <li>Mengintegrasikan konsep aktuaria dalam kehidupan sehari-hari</li>
+        <li>Membantu pengguna mengambil keputusan finansial yang lebih baik</li>
+    </ul>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =====================================================
+    # FITUR
+    # =====================================================
+
+    st.markdown("""
+    <div class="card">
+
+    <h2>✨ Fitur Utama EduPlan+</h2>
+
+    <h3>🎓 Simulasi Dana Pendidikan</h3>
+
+    <p style='font-size:18px'>
+    Menghitung estimasi biaya pendidikan masa depan
+    berdasarkan inflasi pendidikan dan jangka waktu persiapan.
+    </p>
+
+    <hr>
+
+    <h3>📉 Analisis Risiko Inflasi</h3>
+
+    <p style='font-size:18px'>
+    Membantu pengguna memahami dampak inflasi
+    terhadap kenaikan biaya pendidikan di masa depan.
+    </p>
+
+    <hr>
+
+    <h3>💰 Konsultasi Strategi Pendidikan</h3>
+
+    <p style='font-size:18px'>
+    Memberikan rekomendasi strategi investasi
+    dan estimasi tabungan bulanan
+    berdasarkan target dana pendidikan pengguna.
+    </p>
+
+    <hr>
+
+    <h3>🌍 Simulasi Kuliah Luar Negeri</h3>
+
+    <p style='font-size:18px'>
+    Menghitung estimasi biaya pendidikan luar negeri
+    dengan mempertimbangkan kurs dollar dan euro.
+    </p>
+
+    <hr>
+
+    <h3>📚 Edukasi Finansial</h3>
+
+    <p style='font-size:18px'>
+    Memberikan edukasi mengenai:
+    inflasi pendidikan,
+    investasi,
+    nilai waktu uang,
+    dan pentingnya perencanaan keuangan.
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =====================================================
+    # KEUNGGULAN
+    # =====================================================
+
+    st.markdown("""
+    <div class="card">
+
+    <h2>🌟 Keunggulan EduPlan+</h2>
+
+    <ul style='font-size:18px'>
+        <li>✔ Mudah digunakan oleh masyarakat umum</li>
+        <li>✔ Menggunakan konsep matematika aktuaria</li>
+        <li>✔ Simulasi realistis berbasis inflasi pendidikan</li>
+        <li>✔ Tampilan modern dan interaktif</li>
+        <li>✔ Mendukung perencanaan pendidikan luar negeri</li>
+        <li>✔ Membantu meningkatkan literasi finansial</li>
+    </ul>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =====================================================
+    # TEKNOLOGI
+    # =====================================================
+
+    st.markdown("""
+    <div class="card">
+
+    <h2>🛠 Teknologi yang Digunakan</h2>
+
+    <ul style='font-size:18px'>
+        <li>Python</li>
+        <li>Streamlit</li>
+        <li>Pandas</li>
+        <li>Matplotlib</li>
+    </ul>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =====================================================
+    # PENUTUP
+    # =====================================================
+
+    st.markdown("""
+    <div class="card">
+
+    <h2>💡 EduPlan+ untuk Masa Depan Pendidikan</h2>
+
+    <p style='font-size:18px'>
+    EduPlan+ hadir bukan hanya sebagai aplikasi simulasi,
+    tetapi juga sebagai sarana edukasi finansial
+    agar masyarakat lebih siap menghadapi
+    kenaikan biaya pendidikan di masa depan.
+    </p>
+
+    <p style='font-size:18px'>
+    Dengan perencanaan yang baik,
+    pendidikan berkualitas dapat dipersiapkan
+    sejak dini secara lebih terukur dan realistis.
+    </p>
+
+    <hr>
+
+    <p style='font-size:16px; color:gray'>
+    EduPlan+ © 2026
+    <br>
+    Smart Education Financial Planner
+    </p>
 
     </div>
     """, unsafe_allow_html=True)
