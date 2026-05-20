@@ -121,23 +121,21 @@ if menu == "🏠 Home":
         font-weight:800;
         margin-bottom:10px;
     ">
-    🎓 EduPlan+
+    🎓 FutureFund
     </h1>
 
     <p style="
         font-size:28px;
         margin-bottom:20px;
     ">
-    Smart Education Financial Planner
+    “Plan Education, Secure the Future”
     </p>
 
     <p style="
         font-size:20px;
         line-height:1.8;
     ">
-    EduPlan+ membantu masyarakat memahami
-    inflasi pendidikan, investasi,
-    serta perencanaan dana pendidikan
+    FutureFund membantu masyarakat memahami inflasi pendidikan, investasi, serta perencanaan dana pendidikan 
     secara modern, mudah, dan realistis.
     </p>
 
@@ -163,7 +161,7 @@ if menu == "🏠 Home":
     with col2:
 
         st.metric(
-            "Kenaikan Biaya Kuliah",
+            "Kenaikan Biaya Pendidikan",
             "2-3x",
             "dalam 10 tahun"
         )
@@ -179,25 +177,22 @@ if menu == "🏠 Home":
     st.divider()
 
     # =================================================
-    # MENGAPA EDUPLAN
+    # Tujuan FutureFund
     # =================================================
 
     st.markdown("""
     <div class="card">
 
-    <h1>📈 Mengapa EduPlan+ Dibuat?</h1>
+    <h1>📈 Mengapa FutureFund Dibuat?</h1>
 
     <p style='font-size:19px'>
-    Biaya pendidikan terus meningkat setiap tahun,
-    sementara banyak masyarakat belum memahami
+    Biaya pendidikan terus meningkat setiap tahun, sementara banyak masyarakat belum memahami
     pentingnya perencanaan dana pendidikan.
     </p>
 
     <p style='font-size:19px'>
-    EduPlan+ hadir sebagai solusi digital
-    berbasis matematika aktuaria dan nilai waktu uang
-    untuk membantu masyarakat mempersiapkan
-    dana pendidikan secara lebih terukur.
+    FutureFund hadir sebagai solusi digital berbasis matematika aktuaria dan nilai waktu uang
+    untuk membantu masyarakat mempersiapkan dana pendidikan secara terstruktur.
     </p>
 
     <hr>
@@ -210,7 +205,7 @@ if menu == "🏠 Home":
         <li>✔ Menentukan target tabungan bulanan</li>
         <li>✔ Memilih strategi investasi pendidikan</li>
         <li>✔ Memahami risiko ekonomi dan inflasi</li>
-        <li>✔ Mempersiapkan kuliah luar negeri</li>
+        <li>✔ Mempersiapkan pendidikan dengan baik dan mudah</li>
     </ul>
 
     </div>
