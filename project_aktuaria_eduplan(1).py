@@ -1365,6 +1365,10 @@ elif menu == "📚 Edukasi Finansial":
 
 elif menu == "ℹ Tentang Aplikasi":
 
+    # =====================================================
+    # HERO
+    # =====================================================
+
     st.markdown("""
     <div style="
         background: linear-gradient(
@@ -1378,17 +1382,18 @@ elif menu == "ℹ Tentang Aplikasi":
         text-align:center;
         margin-bottom:30px;
     ">
-
+    
     <h1 style="
         font-size:60px;
         font-weight:800;
+        margin-bottom:10px;
     ">
     🎓 FutureFund
     </h1>
 
     <p style="
-        font-size:28px;
-        margin-top:10px;
+        font-size:26px;
+        margin-bottom:20px;
     ">
     Smart Education Financial Planner
     </p>
@@ -1396,10 +1401,11 @@ elif menu == "ℹ Tentang Aplikasi":
     <p style="
         font-size:20px;
         line-height:1.8;
-        margin-top:20px;
+        max-width:850px;
+        margin:auto;
     ">
     FutureFund membantu masyarakat
-    merencanakan dana pendidikan
+    mempersiapkan dana pendidikan
     secara lebih mudah,
     modern,
     dan realistis.
@@ -1409,7 +1415,7 @@ elif menu == "ℹ Tentang Aplikasi":
     """, unsafe_allow_html=True)
 
     # =====================================================
-    # TENTANG FUTUREFUND
+    # CARD
     # =====================================================
 
     st.markdown("""
@@ -1417,7 +1423,7 @@ elif menu == "ℹ Tentang Aplikasi":
 
     <h1>📌 Tentang FutureFund</h1>
 
-    <p style='font-size:18px'>
+    <p style="font-size:18px; line-height:1.9">
     FutureFund merupakan aplikasi simulasi
     dana pendidikan berbasis matematika aktuaria,
     inflasi pendidikan,
@@ -1425,80 +1431,50 @@ elif menu == "ℹ Tentang Aplikasi":
     (Time Value of Money).
     </p>
 
-    <p style='font-size:18px'>
+    <p style="font-size:18px; line-height:1.9">
     Platform ini dibuat untuk membantu masyarakat
     memahami pentingnya persiapan dana pendidikan
     sejak dini di tengah meningkatnya biaya pendidikan
     dan kondisi ekonomi yang terus berubah.
     </p>
 
-    <p style='font-size:18px'>
+    <p style="font-size:18px; line-height:1.9">
     Dengan FutureFund,
-    pengguna dapat memperkirakan
-    biaya pendidikan masa depan,
+    pengguna dapat memperkirakan biaya pendidikan masa depan,
     menghitung target dana,
     serta memahami strategi keuangan pendidikan
     secara lebih realistis.
     </p>
 
-    <h2 style="margin-top:30px">
-📚 Konsep Utama FutureFund
-</h2>
-
-<div style="
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:15px;
-    margin-top:20px;
-">
-
-<div style="
-    background:#EFF6FF;
-    padding:18px;
-    border-radius:15px;
-">
-✔ Inflasi Pendidikan
-</div>
-
-<div style="
-    background:#EFF6FF;
-    padding:18px;
-    border-radius:15px;
-">
-✔ Investasi Pendidikan
-</div>
-
-<div style="
-    background:#EFF6FF;
-    padding:18px;
-    border-radius:15px;
-">
-✔ Perencanaan Keuangan
-</div>
-
-<div style="
-    background:#EFF6FF;
-    padding:18px;
-    border-radius:15px;
-">
-✔ Simulasi Dana Pendidikan
-</div>
-
-<div style="
-    background:#EFF6FF;
-    padding:18px;
-    border-radius:15px;
-">
-✔ Matematika Aktuaria
-</div>
-
-</div>
-
     </div>
     """, unsafe_allow_html=True)
 
     # =====================================================
-    # PENUTUP
+    # KONSEP
+    # =====================================================
+
+    st.markdown("## 📚 Konsep Utama FutureFund")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+
+        st.info("✔ Inflasi Pendidikan")
+
+        st.info("✔ Investasi Pendidikan")
+
+        st.info("✔ Perencanaan Keuangan")
+
+    with col2:
+
+        st.info("✔ Simulasi Dana Pendidikan")
+
+        st.info("✔ Matematika Aktuaria")
+
+        st.info("✔ Time Value of Money")
+
+    # =====================================================
+    # QUOTE
     # =====================================================
 
     st.markdown("""
@@ -1508,14 +1484,17 @@ elif menu == "ℹ Tentang Aplikasi":
         border-radius:20px;
         color:white;
         text-align:center;
-        margin-top:20px;
+        margin-top:25px;
     ">
 
-    <h2 style='font-size:34px'>
+    <h2 style="font-size:34px">
     “Plan Education, Secure the Future”
     </h2>
 
-    <p style='font-size:18px; color:#CBD5E1'>
+    <p style="
+        font-size:18px;
+        color:#CBD5E1;
+    ">
     FutureFund © 2026
     </p>
 
