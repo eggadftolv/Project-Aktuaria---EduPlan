@@ -1365,36 +1365,30 @@ elif menu == "📚 Edukasi Finansial":
 
 elif menu == "ℹ Tentang Aplikasi":
 
-    # =====================================================
-    # HEADER
-    # =====================================================
-
     st.markdown("""
     <div style="
         background: linear-gradient(
             135deg,
-            #0F172A 0%,
-            #1E3A8A 100%
+            #1E3A8A 0%,
+            #2563EB 100%
         );
         padding:50px;
         border-radius:25px;
         color:white;
-        margin-bottom:30px;
-        box-shadow:0px 8px 24px rgba(0,0,0,0.15);
         text-align:center;
+        margin-bottom:30px;
     ">
 
     <h1 style="
-        font-size:65px;
+        font-size:60px;
         font-weight:800;
-        margin-bottom:10px;
     ">
     🎓 FutureFund
     </h1>
 
     <p style="
         font-size:28px;
-        margin-bottom:25px;
+        margin-top:10px;
     ">
     Smart Education Financial Planner
     </p>
@@ -1402,137 +1396,99 @@ elif menu == "ℹ Tentang Aplikasi":
     <p style="
         font-size:20px;
         line-height:1.8;
-        max-width:900px;
-        margin:auto;
+        margin-top:20px;
     ">
-    Platform edukasi dan simulasi dana pendidikan
-    berbasis matematika aktuaria
-    untuk membantu masyarakat mempersiapkan
-    masa depan pendidikan secara lebih cerdas,
+    FutureFund membantu masyarakat
+    merencanakan dana pendidikan
+    secara lebih mudah,
     modern,
-    dan terencana.
+    dan realistis.
     </p>
 
     </div>
     """, unsafe_allow_html=True)
 
     # =====================================================
-    # FILOSOFI
+    # TENTANG
     # =====================================================
 
     st.markdown("""
     <div class="card">
 
-    <h1>💡 Filosofi FutureFund</h1>
+    <h1>📌 Tentang FutureFund</h1>
 
     <p style='font-size:18px'>
-    Nama <b>FutureFund</b> berasal dari dua kata:
+    FutureFund merupakan aplikasi simulasi
+    dana pendidikan berbasis matematika aktuaria,
+    inflasi pendidikan,
+    dan konsep nilai waktu uang.
     </p>
+
+    <p style='font-size:18px'>
+    Platform ini dibuat untuk membantu masyarakat
+    memahami pentingnya persiapan dana pendidikan
+    sejak dini.
+    </p>
+
+    <p style='font-size:18px'>
+    Dengan FutureFund,
+    pengguna dapat memperkirakan
+    biaya pendidikan masa depan,
+    menghitung target dana,
+    serta memahami strategi investasi pendidikan.
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =====================================================
+    # FITUR
+    # =====================================================
+
+    st.markdown("""
+    <div class="card">
+
+    <h1>🚀 Fitur Utama</h1>
 
     <ul style='font-size:18px; line-height:2'>
-        <li><b>Future</b> → masa depan pendidikan</li>
-        <li><b>Fund</b> → dana, investasi, dan perencanaan finansial</li>
+
+        <li>🎓 Simulasi Dana Pendidikan</li>
+
+        <li>📉 Analisis Risiko Inflasi</li>
+
+        <li>💰 Konsultasi Strategi Pendidikan</li>
+
+        <li>🌍 Simulasi Kuliah Luar Negeri</li>
+
+        <li>📚 Edukasi Finansial</li>
+
     </ul>
-
-    <p style='font-size:18px'>
-    FutureFund memiliki filosofi bahwa
-    pendidikan merupakan investasi jangka panjang
-    yang perlu dipersiapkan sejak dini.
-    </p>
-
-    <p style='font-size:18px'>
-    Platform ini hadir untuk membantu masyarakat
-    memahami bahwa:
-    </p>
-
-    <h2 style='color:#2563EB'>
-    “Perencanaan pendidikan hari ini
-    menentukan kualitas masa depan.”
-    </h2>
 
     </div>
     """, unsafe_allow_html=True)
 
     # =====================================================
-    # TUJUAN PLATFORM
+    # KEUNGGULAN
     # =====================================================
 
     st.markdown("""
     <div class="card">
 
-    <h1>🎯 Tujuan FutureFund</h1>
-
-    <p style='font-size:18px'>
-    FutureFund dikembangkan untuk meningkatkan
-    literasi finansial masyarakat,
-    khususnya dalam bidang pendidikan dan investasi.
-    </p>
-
-    <p style='font-size:18px'>
-    Banyak masyarakat belum memahami:
-    </p>
+    <h1>🌟 Keunggulan FutureFund</h1>
 
     <ul style='font-size:18px; line-height:2'>
-        <li>✔ Dampak inflasi pendidikan</li>
-        <li>✔ Pentingnya investasi pendidikan</li>
-        <li>✔ Risiko finansial masa depan</li>
-        <li>✔ Konsep nilai waktu uang</li>
-        <li>✔ Strategi dana pendidikan jangka panjang</li>
+
+        <li>✔ Mudah digunakan masyarakat umum</li>
+
+        <li>✔ Menggunakan konsep aktuaria</li>
+
+        <li>✔ Tampilan modern dan interaktif</li>
+
+        <li>✔ Simulasi realistis berbasis inflasi</li>
+
+        <li>✔ Membantu meningkatkan literasi finansial</li>
+
     </ul>
-
-    <p style='font-size:18px'>
-    Oleh karena itu,
-    FutureFund hadir sebagai solusi edukatif
-    dan interaktif berbasis teknologi.
-    </p>
-
-    </div>
-    """, unsafe_allow_html=True)
-
-    # =====================================================
-    # ILMU YANG DIGUNAKAN
-    # =====================================================
-
-    st.markdown("""
-    <div class="card">
-
-    <h1>📚 Ilmu yang Digunakan dalam FutureFund</h1>
-
-    <h2>📈 Matematika Aktuaria</h2>
-
-    <p style='font-size:18px'>
-    Digunakan untuk menghitung risiko finansial,
-    simulasi investasi,
-    dan proyeksi dana pendidikan masa depan.
-    </p>
-
-    <hr>
-
-    <h2>💰 Time Value of Money</h2>
-
-    <p style='font-size:18px'>
-    Konsep bahwa nilai uang saat ini
-    lebih berharga dibandingkan masa depan
-    karena dapat diinvestasikan.
-    </p>
-
-    <hr>
-
-    <h2>📉 Inflasi Pendidikan</h2>
-
-    <p style='font-size:18px'>
-    Digunakan untuk memperkirakan kenaikan biaya pendidikan
-    dari tahun ke tahun.
-    </p>
-
-    <hr>
-
-    <h2>📊 Investasi Pendidikan</h2>
-
-    <p style='font-size:18px'>
-    Digunakan untuk membantu pengguna memilih
-    strategi keuangan pendidikan yang sesuai.
-    </p>
 
     </div>
     """, unsafe_allow_html=True)
@@ -1544,85 +1500,44 @@ elif menu == "ℹ Tentang Aplikasi":
     st.markdown("""
     <div class="card">
 
-    <h1>🛠 Teknologi yang Digunakan</h1>
-
-    <ul style='font-size:18px; line-height:2'>
-        <li>🐍 Python</li>
-        <li>📊 Streamlit</li>
-        <li>📈 Matplotlib</li>
-        <li>🗂 Pandas</li>
-    </ul>
+    <h1>🛠 Teknologi</h1>
 
     <p style='font-size:18px'>
-    Teknologi tersebut digunakan
-    untuk membangun aplikasi finansial modern
-    yang interaktif,
-    cepat,
-    dan mudah digunakan.
+    FutureFund dikembangkan menggunakan:
     </p>
 
-    </div>
-    """, unsafe_allow_html=True)
-
-    # =====================================================
-    # TARGET USER
-    # =====================================================
-
-    st.markdown("""
-    <div class="card">
-
-    <h1>👥 Siapa yang Cocok Menggunakan FutureFund?</h1>
-
     <ul style='font-size:18px; line-height:2'>
-        <li>👨‍👩‍👧 Orang tua</li>
-        <li>🎓 Mahasiswa & pelajar</li>
-        <li>💼 Konsultan pendidikan</li>
-        <li>📈 Masyarakat umum</li>
-        <li>🌍 Persiapan kuliah luar negeri</li>
+
+        <li>🐍 Python</li>
+
+        <li>📊 Streamlit</li>
+
+        <li>📈 Matplotlib</li>
+
+        <li>🗂 Pandas</li>
+
     </ul>
 
     </div>
     """, unsafe_allow_html=True)
 
     # =====================================================
-    # PENUTUP
+    # FOOTER
     # =====================================================
 
     st.markdown("""
     <div style="
-        background: linear-gradient(
-            135deg,
-            #1E3A8A 0%,
-            #2563EB 100%
-        );
-        padding:40px;
-        border-radius:20px;
-        color:white;
         text-align:center;
-        margin-top:20px;
+        padding:30px;
+        color:gray;
     ">
 
-    <h1 style='font-size:42px'>
-    🚀 FutureFund
-    </h1>
-
-    <p style='font-size:24px'>
+    <h2>
     “Plan Education, Secure the Future”
-    </p>
+    </h2>
 
-    <p style='font-size:18px; line-height:1.8'>
-    FutureFund hadir untuk membantu masyarakat
-    memahami bahwa pendidikan bukan sekadar biaya,
-    tetapi investasi masa depan
-    yang harus dipersiapkan sejak dini.
-    </p>
-
-    <hr style='margin-top:30px; margin-bottom:20px'>
-
-    <p style='font-size:16px'>
+    <p>
     FutureFund © 2026
-    <br>
-    Smart Education Financial Planner
     </p>
 
     </div>
