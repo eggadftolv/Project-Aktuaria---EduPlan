@@ -1441,23 +1441,58 @@ elif menu == "ℹ Tentang Aplikasi":
     secara lebih realistis.
     </p>
 
-    <p style='font-size:18px'>
-    FutureFund menggabungkan konsep:
-    </p>
+    <h2 style="margin-top:30px">
+📚 Konsep Utama FutureFund
+</h2>
 
-    <ul style='font-size:18px; line-height:2'>
+<div style="
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-top:20px;
+">
 
-        <li>✔ Inflasi Pendidikan</li>
+<div style="
+    background:#EFF6FF;
+    padding:18px;
+    border-radius:15px;
+">
+✔ Inflasi Pendidikan
+</div>
 
-        <li>✔ Investasi Pendidikan</li>
+<div style="
+    background:#EFF6FF;
+    padding:18px;
+    border-radius:15px;
+">
+✔ Investasi Pendidikan
+</div>
 
-        <li>✔ Perencanaan Keuangan</li>
+<div style="
+    background:#EFF6FF;
+    padding:18px;
+    border-radius:15px;
+">
+✔ Perencanaan Keuangan
+</div>
 
-        <li>✔ Simulasi Dana Pendidikan</li>
+<div style="
+    background:#EFF6FF;
+    padding:18px;
+    border-radius:15px;
+">
+✔ Simulasi Dana Pendidikan
+</div>
 
-        <li>✔ Matematika Aktuaria</li>
+<div style="
+    background:#EFF6FF;
+    padding:18px;
+    border-radius:15px;
+">
+✔ Matematika Aktuaria
+</div>
 
-    </ul>
+</div>
 
     </div>
     """, unsafe_allow_html=True)
