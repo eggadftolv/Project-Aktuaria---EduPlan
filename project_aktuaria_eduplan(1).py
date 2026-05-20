@@ -92,51 +92,268 @@ menu = st.sidebar.radio(
     ]
 )
 
-# =========================================================
+# =====================================================
 # HOME
-# =========================================================
+# =====================================================
 
 if menu == "🏠 Home":
 
-    st.markdown(
-        '<p class="big-title">🎓 EduPlan+</p>',
-        unsafe_allow_html=True
-    )
-
-    st.markdown(
-        '<p class="sub-title">'
-        'Smart Education Financial Planner'
-        '</p>',
-        unsafe_allow_html=True
-    )
+    # =================================================
+    # HERO SECTION
+    # =================================================
 
     st.markdown("""
-    <div class="card">
+    <div style="
+        background: linear-gradient(
+            135deg,
+            #1E3A8A 0%,
+            #2563EB 100%
+        );
+        padding: 50px;
+        border-radius: 25px;
+        color: white;
+        margin-bottom: 30px;
+        box-shadow: 0px 8px 24px rgba(0,0,0,0.15);
+    ">
 
-    ## 📈 Mengapa EduPlan Dibuat?
+    <h1 style="
+        font-size:60px;
+        font-weight:800;
+        margin-bottom:10px;
+    ">
+    🎓 EduPlan+
+    </h1>
 
-    EduPlan membantu masyarakat memahami:
-    - inflasi pendidikan
-    - investasi pendidikan
-    - perencanaan dana masa depan
+    <p style="
+        font-size:28px;
+        margin-bottom:20px;
+    ">
+    Smart Education Financial Planner
+    </p>
 
-    Biaya pendidikan terus meningkat setiap tahun,
-    sehingga perencanaan dana pendidikan menjadi penting.
+    <p style="
+        font-size:20px;
+        line-height:1.8;
+    ">
+    EduPlan+ membantu masyarakat memahami
+    inflasi pendidikan, investasi,
+    serta perencanaan dana pendidikan
+    secara modern, mudah, dan realistis.
+    </p>
 
     </div>
     """, unsafe_allow_html=True)
 
+    # =================================================
+    # QUICK INFORMATION
+    # =================================================
+
+    st.markdown("## 📊 Kondisi Pendidikan Saat Ini")
+
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.metric("Inflasi Pendidikan", "10%")
+
+        st.metric(
+            "Inflasi Pendidikan",
+            "10%",
+            "+ setiap tahun"
+        )
 
     with col2:
-        st.metric("Kenaikan Biaya", "2-3x")
+
+        st.metric(
+            "Kenaikan Biaya Kuliah",
+            "2-3x",
+            "dalam 10 tahun"
+        )
 
     with col3:
-        st.metric("Nilai Rupiah", "Melemah")
 
+        st.metric(
+            "Nilai Rupiah",
+            "Melemah",
+            "terhadap USD & EUR"
+        )
+
+    st.divider()
+
+    # =================================================
+    # MENGAPA EDUPLAN
+    # =================================================
+
+    st.markdown("""
+    <div class="card">
+
+    <h1>📈 Mengapa EduPlan+ Dibuat?</h1>
+
+    <p style='font-size:19px'>
+    Biaya pendidikan terus meningkat setiap tahun,
+    sementara banyak masyarakat belum memahami
+    pentingnya perencanaan dana pendidikan.
+    </p>
+
+    <p style='font-size:19px'>
+    EduPlan+ hadir sebagai solusi digital
+    berbasis matematika aktuaria dan nilai waktu uang
+    untuk membantu masyarakat mempersiapkan
+    dana pendidikan secara lebih terukur.
+    </p>
+
+    <hr>
+
+    <h2>🎯 EduPlan Membantu Pengguna:</h2>
+
+    <ul style='font-size:18px; line-height:2'>
+        <li>✔ Menghitung biaya pendidikan masa depan</li>
+        <li>✔ Memahami dampak inflasi pendidikan</li>
+        <li>✔ Menentukan target tabungan bulanan</li>
+        <li>✔ Memilih strategi investasi pendidikan</li>
+        <li>✔ Memahami risiko ekonomi dan inflasi</li>
+        <li>✔ Mempersiapkan kuliah luar negeri</li>
+    </ul>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =================================================
+    # FITUR
+    # =================================================
+
+    st.markdown("## 🚀 Fitur Utama EduPlan+")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+
+        st.markdown("""
+        <div class="card">
+
+        <h2>🎓 Simulasi Dana Pendidikan</h2>
+
+        <p style='font-size:18px'>
+        Menghitung estimasi biaya pendidikan masa depan
+        berdasarkan inflasi dan investasi.
+        </p>
+
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("""
+        <div class="card">
+
+        <h2>📉 Analisis Risiko Inflasi</h2>
+
+        <p style='font-size:18px'>
+        Membandingkan dampak inflasi stabil,
+        normal, dan krisis ekonomi
+        terhadap biaya pendidikan.
+        </p>
+
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col2:
+
+        st.markdown("""
+        <div class="card">
+
+        <h2>💰 Konsultasi Strategi Pendidikan</h2>
+
+        <p style='font-size:18px'>
+        Memberikan rekomendasi investasi,
+        estimasi tabungan,
+        dan strategi pendidikan terbaik.
+        </p>
+
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("""
+        <div class="card">
+
+        <h2>📚 Edukasi Finansial</h2>
+
+        <p style='font-size:18px'>
+        Membantu pengguna memahami:
+        inflasi pendidikan,
+        investasi,
+        dan nilai waktu uang.
+        </p>
+
+        </div>
+        """, unsafe_allow_html=True)
+
+    # =================================================
+    # ILUSTRASI MASALAH
+    # =================================================
+
+    st.divider()
+
+    st.markdown("""
+    <div class="card">
+
+    <h1>⚠ Mengapa Harus Mempersiapkan Dana Pendidikan Sejak Dini?</h1>
+
+    <p style='font-size:18px'>
+    Jika biaya kuliah saat ini sebesar:
+    </p>
+
+    <h2 style='color:#2563EB'>
+    Rp20.000.000
+    </h2>
+
+    <p style='font-size:18px'>
+    dengan inflasi pendidikan sekitar:
+    </p>
+
+    <h2 style='color:#DC2626'>
+    10% per tahun
+    </h2>
+
+    <p style='font-size:18px'>
+    maka dalam 10 tahun,
+    biaya tersebut dapat meningkat menjadi:
+    </p>
+
+    <h1 style='color:#16A34A'>
+    Rp51.874.849
+    </h1>
+
+    <p style='font-size:18px'>
+    Oleh karena itu,
+    perencanaan dana pendidikan sangat penting
+    untuk mengurangi risiko finansial di masa depan.
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    # =================================================
+    # QUOTE
+    # =================================================
+
+    st.markdown("""
+    <div style="
+        background:#1E293B;
+        padding:35px;
+        border-radius:20px;
+        color:white;
+        text-align:center;
+        margin-top:20px;
+    ">
+
+    <h2 style='font-size:34px'>
+    “Pendidikan adalah investasi terbaik
+    untuk masa depan.”
+    </h2>
+
+    <p style='font-size:18px; color:#CBD5E1'>
+    — EduPlan+
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
 # =========================================================
 # DANA PENDIDIKAN
 # =========================================================
