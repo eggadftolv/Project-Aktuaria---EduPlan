@@ -1358,6 +1358,7 @@ elif menu == "📚 Edukasi Finansial":
 
     </div>
     """, unsafe_allow_html=True)
+
 # =====================================================
 # TENTANG APLIKASI
 # =====================================================
@@ -1408,7 +1409,7 @@ elif menu == "ℹ Tentang Aplikasi":
     """, unsafe_allow_html=True)
 
     # =====================================================
-    # TENTANG
+    # TENTANG FUTUREFUND
     # =====================================================
 
     st.markdown("""
@@ -1420,13 +1421,15 @@ elif menu == "ℹ Tentang Aplikasi":
     FutureFund merupakan aplikasi simulasi
     dana pendidikan berbasis matematika aktuaria,
     inflasi pendidikan,
-    dan konsep nilai waktu uang.
+    dan konsep nilai waktu uang
+    (Time Value of Money).
     </p>
 
     <p style='font-size:18px'>
     Platform ini dibuat untuk membantu masyarakat
     memahami pentingnya persiapan dana pendidikan
-    sejak dini.
+    sejak dini di tengah meningkatnya biaya pendidikan
+    dan kondisi ekonomi yang terus berubah.
     </p>
 
     <p style='font-size:18px'>
@@ -1434,27 +1437,56 @@ elif menu == "ℹ Tentang Aplikasi":
     pengguna dapat memperkirakan
     biaya pendidikan masa depan,
     menghitung target dana,
-    serta memahami strategi investasi pendidikan.
+    serta memahami strategi keuangan pendidikan
+    secara lebih realistis.
     </p>
+
+    <p style='font-size:18px'>
+    FutureFund menggabungkan konsep:
+    </p>
+
+    <ul style='font-size:18px; line-height:2'>
+
+        <li>✔ Inflasi Pendidikan</li>
+
+        <li>✔ Investasi Pendidikan</li>
+
+        <li>✔ Perencanaan Keuangan</li>
+
+        <li>✔ Simulasi Dana Pendidikan</li>
+
+        <li>✔ Matematika Aktuaria</li>
+
+    </ul>
 
     </div>
     """, unsafe_allow_html=True)
 
     # =====================================================
-    # FOOTER
+    # PENUTUP
     # =====================================================
 
     st.markdown("""
     <div style="
+        background:#1E293B;
+        padding:35px;
+        border-radius:20px;
+        color:white;
         text-align:center;
-        padding:30px;
-        color:gray;
+        margin-top:20px;
     ">
 
-    <h2>
+    <h2 style='font-size:34px'>
     “Plan Education, Secure the Future”
     </h2>
 
+    <p style='font-size:18px; color:#CBD5E1'>
+    FutureFund © 2026
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+    
 # =====================================================
 # FOOTER
 # =====================================================
